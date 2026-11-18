@@ -6,6 +6,7 @@ import { CaseStudies } from './components/CaseStudies'
 import { Experience } from './components/Experience'
 import { Hero } from './components/Hero'
 import { Playground } from './components/Playground'
+import { SketchPad } from './components/SketchPad'
 import { Projects } from './components/Projects'
 import { Credentials, Skills } from './components/Skills'
 import { Stats } from './components/Stats'
@@ -69,6 +70,7 @@ export default function App() {
         </div>
 
         <Playground />
+        <SketchPad />
         <Terminal onToggleTheme={toggle} />
       </main>
 

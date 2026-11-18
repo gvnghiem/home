@@ -92,7 +92,7 @@ export function Terminal({ onToggleTheme }: { onToggleTheme: () => void }) {
   }
 
   return (
-    <Card title="Live CLI" icon={<TerminalSquare size={18} />} accent="green" delay={0.1} className="flex flex-col lg:col-span-8">
+    <Card title="Live CLI" icon={<TerminalSquare size={18} />} accent="green" delay={0.1} className="flex flex-col lg:col-span-12">
       <div
         className="flex flex-1 flex-col rounded-xl border border-line bg-[#070910] p-3 font-mono text-[13px] leading-relaxed text-[#d7dcea]"
         onClick={() => inputRef.current?.focus({ preventScroll: true })}

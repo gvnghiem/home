@@ -33,22 +33,6 @@ export const stats = [
   { value: '10M+', label: 'Daily visitors across the enterprise websites I’ve supported, directly and indirectly' },
 ]
 
-// Industries of the brands supported (names intentionally omitted).
-export const industries = [
-  'Sporting goods retail',
-  'Consumer telecom',
-  'Mobile',
-  'Business connectivity',
-  'Health & nutrition retail',
-  'Furniture retail',
-  'Rent-to-own retail',
-  'Automotive retail',
-]
-
-// Optional: drop logo files you have permission to use into public/logos/ and list the file names here,
-// e.g. ['brand-a.svg', 'brand-b.png']. They render as a strip under the industries.
-export const clientLogos: string[] = []
-
 export const projects = [
   {
     name: 'Bot City HQ',
