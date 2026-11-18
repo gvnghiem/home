@@ -23,7 +23,7 @@ export function SketchPad() {
         title="Sketch Pad, an interactive drawing app"
         loading="lazy"
         sandbox="allow-scripts allow-same-origin"
-        className="h-[460px] w-full flex-1 rounded-xl border border-line bg-white"
+        className="min-h-[460px] w-full flex-1 rounded-xl border border-line bg-white"
       />
     </Card>
   )
