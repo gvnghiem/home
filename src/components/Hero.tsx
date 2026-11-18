@@ -21,6 +21,14 @@ export function Hero() {
       <p className="mt-1 text-sm text-muted">
         {profile.title} · {profile.subtitle}
       </p>
+      <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5" aria-label="Engineer in">
+        <span className="text-xs font-semibold text-muted">Engineer in:</span>
+        {profile.engineerIn.map((e) => (
+          <span key={e} className="chip" style={{ ['--a' as string]: 'var(--violet)' }}>
+            {e}
+          </span>
+        ))}
+      </div>
       {availability.open && (
         <span className="chip mt-3" style={{ ['--a' as string]: 'var(--green)' }}>
           <span className="h-2 w-2 rounded-full bg-green" aria-hidden /> {availability.status}

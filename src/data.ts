@@ -4,6 +4,7 @@ export const profile = {
   name: 'Gau Nghiem',
   title: 'Customer Success Engineer',
   subtitle: 'Cloud Platform · AI & Data',
+  engineerIn: ['Customer Success', 'Cloud Platform', 'Software', 'System', 'Data', 'AI', 'Solution'],
   summary:
     '13+ years bridging complex technical platforms and the people who depend on them — from building a cloud gaming platform at Comcast to onboarding Fortune 500 clients onto Quantum Metric.',
   github: 'https://github.com/gvnghiem',
