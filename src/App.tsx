@@ -50,13 +50,16 @@ export default function App() {
         <Hero />
         <div className="grid min-w-0 content-start gap-4 lg:col-span-8">
           <Stats />
+          <Availability />
+        </div>
+
+        <div className="min-w-0 lg:col-span-12">
           <Projects />
         </div>
 
         <CaseStudies />
         <div className="grid min-w-0 content-start gap-4 lg:col-span-4">
           <Building />
-          <Availability />
         </div>
 
         <Experience />

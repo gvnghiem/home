@@ -6,7 +6,7 @@ export const profile = {
   subtitle: 'Cloud Platform · AI & Data',
   engineerIn: ['Customer Success', 'Cloud Platform', 'Software', 'System', 'Data', 'AI', 'Solution'],
   summary:
-    '13+ years bridging complex technical platforms and the people who depend on them — from building a cloud gaming platform at Comcast to onboarding Fortune 500 clients onto Quantum Metric.',
+    '15+ years of hands-on engineering across cloud platforms, data pipelines, and observability, applied to enterprise client delivery. I build the platform, then make it work for the business, from a cloud gaming platform at Comcast to Fortune 500 implementations at Quantum Metric.',
   github: 'https://github.com/gvnghiem',
   githubUser: 'gvnghiem',
   linkedin: 'https://www.linkedin.com/in/gaunghiem',
@@ -29,11 +29,25 @@ export const availability = {
 }
 
 export const stats = [
-  { value: '13+', label: 'Years in production engineering & client delivery' },
-  { value: '900K+', label: 'Daily visitors on the order-entry portals I supported' },
-  { value: '11K+', label: 'Orders submitted per day through those portals' },
-  { value: 'Millions', label: 'Gaming sessions the cloud platform scaled to serve' },
+  { value: '15+', label: 'Years of hands-on engineering across cloud, data & enterprise platforms' },
+  { value: '10M+', label: 'Daily visitors across the enterprise websites I’ve supported, directly and indirectly' },
 ]
+
+// Industries of the brands supported (names intentionally omitted).
+export const industries = [
+  'Sporting goods retail',
+  'Consumer telecom',
+  'Mobile',
+  'Business connectivity',
+  'Health & nutrition retail',
+  'Furniture retail',
+  'Rent-to-own retail',
+  'Automotive retail',
+]
+
+// Optional: drop logo files you have permission to use into public/logos/ and list the file names here,
+// e.g. ['brand-a.svg', 'brand-b.png']. They render as a strip under the industries.
+export const clientLogos: string[] = []
 
 export const projects = [
   {

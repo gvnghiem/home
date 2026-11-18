@@ -18,9 +18,6 @@ export function Hero() {
         GN
       </div>
       <h1 className="text-3xl font-extrabold tracking-tight">{profile.name.toUpperCase()}</h1>
-      <p className="mt-1 text-sm text-muted">
-        {profile.title} · {profile.subtitle}
-      </p>
       <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5" aria-label="Engineer in">
         <span className="text-xs font-semibold text-muted">Engineer in:</span>
         {profile.engineerIn.map((e) => (
