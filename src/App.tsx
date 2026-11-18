@@ -8,6 +8,7 @@ import { Hero } from './components/Hero'
 import { Playground } from './components/Playground'
 import { SketchPad } from './components/SketchPad'
 import { Projects } from './components/Projects'
+import { RubiksCube } from './components/RubiksCube'
 import { Credentials, Skills } from './components/Skills'
 import { Stats } from './components/Stats'
 import { Terminal } from './components/Terminal'
@@ -69,6 +70,7 @@ export default function App() {
           <Credentials />
         </div>
 
+        <RubiksCube />
         <Playground />
         <SketchPad />
         <Terminal onToggleTheme={toggle} />
