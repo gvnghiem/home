@@ -35,6 +35,13 @@ export const stats = [
 
 export const projects = [
   {
+    name: 'Rubiksports',
+    desc: 'Playable 2×2, 3×3 & 4×4 Rubik’s cube with timer and solver (Three.js)',
+    url: 'https://gvnghiem.github.io/rubiksports/',
+    img: `${import.meta.env.BASE_URL}projects/rubiksports.png`,
+    tags: ['Three.js', 'Game'],
+  },
+  {
     name: 'Bot City HQ',
     desc: 'Chief-driven NPC office sim (Three.js)',
     url: 'https://gvnghiem.github.io/bot-city/',
