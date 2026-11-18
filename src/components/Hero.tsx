@@ -1,0 +1,47 @@
+import { Download, Mail } from 'lucide-react'
+import { Github, Linkedin } from './BrandIcons'
+import { Card } from './Card'
+import { availability, email, profile } from '../data'
+
+export function Hero() {
+  const resumeHref = `${import.meta.env.BASE_URL}${profile.resumePdf}`
+  return (
+    <Card accent="violet" label="Introduction" className="flex flex-col items-center text-center lg:col-span-4">
+      <div
+        className="mb-3 grid h-24 w-24 place-items-center rounded-full text-3xl font-bold text-white"
+        style={{
+          background: 'linear-gradient(135deg, var(--violet), var(--cyan))',
+          boxShadow: '0 0 0 4px var(--card), 0 0 0 6px color-mix(in srgb, var(--violet) 60%, transparent)',
+        }}
+        aria-hidden
+      >
+        GN
+      </div>
+      <h1 className="text-3xl font-extrabold tracking-tight">{profile.name.toUpperCase()}</h1>
+      <p className="mt-1 text-sm text-muted">
+        {profile.title} · {profile.subtitle}
+      </p>
+      {availability.open && (
+        <span className="chip mt-3" style={{ ['--a' as string]: 'var(--green)' }}>
+          <span className="h-2 w-2 rounded-full bg-green" aria-hidden /> {availability.status}
+        </span>
+      )}
+      <p className="mt-4 text-sm leading-relaxed text-muted">{profile.summary}</p>
+
+      <a className="btn btn-primary mt-5 w-full" href={resumeHref} download>
+        <Download size={16} /> Download PDF Resume
+      </a>
+      <div className="mt-2 grid w-full grid-cols-3 gap-2">
+        <a className="btn" href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub profile">
+          <Github size={16} /> <span className="hidden sm:inline">GitHub</span>
+        </a>
+        <a className="btn" href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+          <Linkedin size={16} /> <span className="hidden sm:inline">LinkedIn</span>
+        </a>
+        <a className="btn" href={`mailto:${email()}`} aria-label="Send email">
+          <Mail size={16} /> <span className="hidden sm:inline">Email</span>
+        </a>
+      </div>
+    </Card>
+  )
+}

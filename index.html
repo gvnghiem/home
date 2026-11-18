@@ -1,86 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gvnghiem's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Gvnghiem's Portfolio</h1>
-        <p>A collection of my coding projects</p>
-    </header>
-    <main>
-        <section class="project-tiles">
-            <a href="https://gvnghiem.github.io/panda-stack/" class="tile">
-                <img src="https://gvnghiem.github.io/panda-stack/screenshot.png" alt="Panda Stack Thumbnail">
-                <div class="description">
-                    <p class="title">Panda Stack build with Javascript</p>
-                    <p class="play-link">Click on thumbnail to Play</p>
-                </div>
-            </a>
-            <a href="https://gvnghiem.github.io/flappy-bird-js/" class="tile">
-                <img src="https://gvnghiem.github.io/flappy-bird-js/screenshot.png" alt="Flappy Bird Thumbnail">
-                <div class="description">
-                    <p class="title">Flappy Bird build with Javascript</p>
-                    <p class="play-link">Click on thumbnail to Play</p>
-                </div>
-            </a>
-            <a href="https://gvnghiem.github.io/sketch-pad/" class="tile">
-                <img src="https://gvnghiem.github.io/sketch-pad/screenshot.png" alt="Flappy Bird Thumbnail">
-                <div class="description">
-                    <p class="title">Sketch-Pad build with Javascript</p>
-                    <p class="play-link">Click on thumbnail to Start Drawing</p>
-                </div>
-            </a>
-            <a href="https://gvnghiem.github.io/bot-city/" class="tile">
-                <img src="https://gvnghiem.github.io/bot-city/screenshot.png" alt="Bot City HQ Thumbnail">
-                <div class="description">
-                    <p class="title">Bot City HQ — Chief-driven NPC office sim (Three.js)</p>
-                    <p class="play-link">Click on thumbnail to Explore</p>
-                </div>
-            </a>
-            <a href="https://gvnghiem.github.io/bot-media-hq/" class="tile">
-                <img src="https://gvnghiem.github.io/bot-media-hq/screenshot.png" alt="Bot Media Industry HQ Thumbnail">
-                <div class="description">
-                    <p class="title">Bot Media Industry HQ — content studio NPC sim (Three.js)</p>
-                    <p class="play-link">Click on thumbnail to Explore</p>
-                </div>
-            </a>
-            <a href="https://gvnghiem.github.io/bot-finance-hq/" class="tile">
-                <img src="https://gvnghiem.github.io/bot-finance-hq/screenshot.png" alt="Bot Finance HQ Thumbnail">
-                <div class="description">
-                    <p class="title">Bot Finance HQ — 24/7 investment desk NPC sim (Three.js)</p>
-                    <p class="play-link">Click on thumbnail to Explore</p>
-                </div>
-            </a>
-            <a href="https://gvnghiem.github.io/bot-travel-hq/" class="tile">
-                <img src="https://gvnghiem.github.io/bot-travel-hq/screenshot.png" alt="Bot Travel HQ Thumbnail">
-                <div class="description">
-                    <p class="title">Bot Travel HQ — real-time travel deal scouting NPC sim (Three.js)</p>
-                    <p class="play-link">Click on thumbnail to Explore</p>
-                </div>
-            </a>
-            <a href="https://gvnghiem.github.io/bot-deals-hq/" class="tile">
-                <img src="https://gvnghiem.github.io/bot-deals-hq/screenshot.png" alt="Bot Deal Community HQ Thumbnail">
-                <div class="description">
-                    <p class="title">Bot Deal Community HQ — 24/7 affiliate deal sharing NPC sim (Three.js)</p>
-                    <p class="play-link">Click on thumbnail to Explore</p>
-                </div>
-            </a>
-            <a href="https://gvnghiem.github.io/bot-university-hq/" class="tile">
-                <img src="https://gvnghiem.github.io/bot-university-hq/screenshot.png" alt="Bot University HQ Thumbnail">
-                <div class="description">
-                    <p class="title">Bot University HQ — live-teaching studio NPC sim (Three.js)</p>
-                    <p class="play-link">Click on thumbnail to Explore</p>
-                </div>
-            </a>
-            <!-- Add more project tiles here as you create more projects -->
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Gvnghiem. All rights reserved.</p>
-    </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gau Nghiem — Customer Success Engineer · Cloud · AI & Data</title>
+    <meta name="description" content="Interactive resume of Gau Nghiem: Customer Success Engineer with 13+ years across cloud platform engineering, observability, and enterprise client implementation." />
+    <meta property="og:title" content="Gau Nghiem — Customer Success Engineer" />
+    <meta property="og:description" content="13+ years bridging complex technical platforms and the people who depend on them. Cloud, AI & data." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      // Apply saved theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        if (t === 'light') document.documentElement.classList.add('light');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

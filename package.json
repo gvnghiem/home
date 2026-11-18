@@ -1,0 +1,38 @@
+{
+  "name": "gvnghiem-home",
+  "version": "1.0.0",
+  "description": "Gau Nghiem — interactive Bento-box resume",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvnghiem/home.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gvnghiem/home/issues"
+  },
+  "homepage": "https://github.com/gvnghiem/home#readme",
+  "dependencies": {
+    "framer-motion": "^14.14.0",
+    "lucide-react": "^1.75.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@types/three": "^0.187.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  },
+  "private": true,
+  "type": "module"
+}
