@@ -136,9 +136,9 @@ export const caseStudies: CaseStudy[] = [
       'Server metrics vs. client truth: a custom Python + C++ latency QA tool feeding Elasticsearch shows what players actually experience, at the cost of owning another tool.',
     ],
     solution:
-      'Real-time pipelines (Kinesis → Lambda) into ELK/OpenSearch on AWS, Grafana dashboards on Linux EC2 for platform analytics, and a latency QA tool wired into the same search stack, backed by a security-first data catalog for third-party partner data.',
+      'An AWS storefront and API Gateway in front of real-time pipelines (Kinesis → Lambda) into ELK/OpenSearch, Grafana dashboards on Linux EC2 for platform analytics, and a latency QA tool wired into the same search stack, backed by a security-first data catalog for third-party partner data.',
     impact: 'Near-instant event processing and anomaly detection across the platform.',
-    stack: ['AWS Kinesis', 'Lambda', 'OpenSearch / ELK', 'Grafana', 'Python', 'C++'],
+    stack: ['AWS API Gateway', 'AWS Kinesis', 'Lambda', 'OpenSearch / ELK', 'Grafana', 'Python', 'C++'],
   },
   {
     id: 'maas',
@@ -151,9 +151,9 @@ export const caseStudies: CaseStudy[] = [
       'Everything as code (Concourse, IaC) vs. console setup: slower first onboarding, repeatable and reviewable every time after.',
     ],
     solution:
-      'A Monitoring-as-a-Service offering on Grafana with Prometheus ingesting AWS S3 logs, covering alert detection, runbook automation, and a standard application-support onboarding path, with the pipeline defined as infrastructure as code.',
+      'A Monitoring-as-a-Service offering on Grafana, fed by Prometheus for infrastructure metrics and by Logstash and Elasticsearch pulling gaming user activity logs from AWS S3, covering alert detection, runbook automation, and a standard application-support onboarding path, with the pipeline defined as infrastructure as code.',
     impact: 'Significantly faster production incident response.',
-    stack: ['Grafana', 'Prometheus', 'AWS S3', 'Concourse', 'ServiceNow', 'Python'],
+    stack: ['Grafana', 'Prometheus', 'Elasticsearch', 'Logstash', 'AWS S3', 'Concourse', 'ServiceNow', 'Python'],
   },
   {
     id: 'bopis',

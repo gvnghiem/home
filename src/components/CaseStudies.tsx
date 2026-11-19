@@ -3,6 +3,8 @@ import { AlertTriangle, ArrowRight, Lightbulb, Scale, Target } from 'lucide-reac
 import { useState } from 'react'
 import { Card } from './Card'
 import { caseStudies } from '../data'
+import { topologies } from '../topologies'
+import { TopologyDiagram } from './TopologyDiagram'
 
 export function CaseStudies() {
   const [active, setActive] = useState(caseStudies[0].id)
@@ -15,7 +17,7 @@ export function CaseStudies() {
       accent="cyan"
       delay={0.05}
       className="lg:col-span-8"
-      right={<span className="hidden text-xs text-muted sm:inline">Problem → Trade-offs → Solution</span>}
+      right={<span className="hidden text-xs text-muted sm:inline">Problem → Trade-offs → Solution → Topology</span>}
     >
       <div role="tablist" aria-label="Case studies" className="scroll-x -mx-1 flex gap-2 overflow-x-auto px-1 pb-2">
         {caseStudies.map((c) => {
@@ -90,6 +92,8 @@ export function CaseStudies() {
               ))}
             </div>
           </div>
+
+          {topologies[study.id] && <TopologyDiagram id={study.id} topo={topologies[study.id]} />}
         </motion.div>
       </AnimatePresence>
     </Card>
