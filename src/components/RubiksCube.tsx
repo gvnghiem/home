@@ -26,7 +26,7 @@ export function RubiksCube() {
         loading="lazy"
         allow="fullscreen"
         sandbox="allow-scripts allow-same-origin"
-        className="min-h-[680px] w-full flex-1 rounded-xl border border-line bg-[#9bd3ff] sm:min-h-[520px]"
+        className="min-h-[620px] w-full flex-1 rounded-xl border border-line bg-[#9bd3ff] sm:min-h-[520px]"
       />
     </Card>
   )
