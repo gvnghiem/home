@@ -7,16 +7,14 @@ export function Hero() {
   const resumeHref = `${import.meta.env.BASE_URL}${profile.resumePdf}`
   return (
     <Card accent="violet" label="Introduction" className="flex flex-col items-center text-center lg:col-span-4">
-      <div
-        className="mb-3 grid h-24 w-24 place-items-center rounded-full text-3xl font-bold text-white"
-        style={{
-          background: 'linear-gradient(135deg, var(--violet), var(--cyan))',
-          boxShadow: '0 0 0 4px var(--card), 0 0 0 6px color-mix(in srgb, var(--violet) 60%, transparent)',
-        }}
-        aria-hidden
-      >
-        GN
-      </div>
+      <img
+        src={`${import.meta.env.BASE_URL}avatar.jpg`}
+        alt="Illustrated portrait of Gau Nghiem"
+        width={96}
+        height={96}
+        className="mb-3 h-24 w-24 rounded-full object-cover"
+        style={{ boxShadow: '0 0 0 4px var(--card), 0 0 0 6px color-mix(in srgb, var(--violet) 60%, transparent)' }}
+      />
       <h1 className="text-3xl font-extrabold tracking-tight">{profile.name.toUpperCase()}</h1>
       <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5" aria-label="Engineer in">
         <span className="text-xs font-semibold text-muted">Engineer in:</span>
