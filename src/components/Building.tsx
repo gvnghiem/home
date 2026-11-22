@@ -1,6 +1,7 @@
 import { GitCommitHorizontal, Hammer } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Card } from './Card'
+import { TrafficPanel } from './TrafficPanel'
 import { learning, profile } from '../data'
 
 type Repo = { name: string; html_url: string; description: string | null; pushed_at: string; language: string | null }
@@ -91,6 +92,8 @@ export function Building() {
           </li>
         ))}
       </ul>
+
+      <TrafficPanel />
 
       <h3 className="mb-2 mt-4 text-xs font-semibold uppercase tracking-wider text-muted">Learning</h3>
       <div className="flex flex-wrap gap-1.5">

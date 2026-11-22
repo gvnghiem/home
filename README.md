@@ -20,3 +20,13 @@ npm run build    # type-check + production build to dist/
 ## Deploy
 Pushes to `main` run `.github/workflows/deploy.yml`.
 One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+## Repo traffic panel (optional)
+
+The "Repo traffic" panel in *Currently Building* shows views, unique visitors and clones from GitHub.
+GitHub only keeps 14 days, so `.github/workflows/traffic.yml` runs daily and stores a longer history on the
+`traffic-data` branch (`scripts/collect-traffic.mjs`). The panel stays hidden until that file exists.
+
+Setup: create a fine-grained personal access token for your account with read access to **Administration**
+on the repos you want counted, save it as the repository secret `TRAFFIC_TOKEN`, then run the
+*Collect repo traffic* workflow once from the Actions tab. Numbers cover GitHub repo pages and clones, not visits to the Pages site itself.

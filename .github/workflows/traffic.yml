@@ -1,0 +1,35 @@
+name: Collect repo traffic
+
+# GitHub only keeps 14 days of traffic. Running daily builds a longer history,
+# stored on a separate `traffic-data` branch so it never touches main or triggers a deploy.
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: traffic
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Collect traffic
+        env:
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: node scripts/collect-traffic.mjs
+      - name: Publish to traffic-data branch
+        run: |
+          cd out
+          git init -q -b traffic-data
+          git add traffic.json
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "Traffic data $(date -u +%F)"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" traffic-data
