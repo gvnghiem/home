@@ -45,7 +45,8 @@ export const projects = [
     name: 'Texas Hold’em',
     desc: 'No-limit poker with bot AI, side pots and hot-seat multiplayer',
     url: 'https://gvnghiem.github.io/texasholdem/',
-    img: `${import.meta.env.BASE_URL}projects/texasholdem.jpg`,
+    img: 'https://repository-images.githubusercontent.com/1464820860/33089dd7-51c4-46fd-a57c-a5c5cf10ea57',
+    pos: '60% center',
     tags: ['JavaScript', 'Game'],
   },
   {

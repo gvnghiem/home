@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Card } from './Card'
 import { projects } from '../data'
 
-function Thumb({ src, alt }: { src: string; alt: string }) {
+function Thumb({ src, alt, pos }: { src: string; alt: string; pos?: string }) {
   const [failed, setFailed] = useState(false)
   if (failed) {
     return (
@@ -15,7 +15,7 @@ function Thumb({ src, alt }: { src: string; alt: string }) {
       </div>
     )
   }
-  return <img src={src} alt={alt} loading="lazy" onError={() => setFailed(true)} className="h-full w-full object-cover" />
+  return <img src={src} alt={alt} loading="lazy" onError={() => setFailed(true)} className="h-full w-full object-cover" style={pos ? { objectPosition: pos } : undefined} />
 }
 
 export function Projects() {
@@ -31,7 +31,7 @@ export function Projects() {
             className="group w-52 shrink-0 snap-start overflow-hidden rounded-xl border border-line bg-card2 no-underline transition-transform hover:-translate-y-1 hover:border-[color:var(--a)]"
           >
             <div className="aspect-[16/10] overflow-hidden bg-black/30">
-              <Thumb src={p.img} alt={p.name} />
+              <Thumb src={p.img} alt={p.name} pos={'pos' in p ? p.pos : undefined} />
             </div>
             <div className="p-3">
               <div className="flex items-center justify-between gap-2">
