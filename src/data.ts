@@ -35,6 +35,20 @@ export const stats = [
 
 export const projects = [
   {
+    name: 'DevPortal',
+    desc: 'Browser dev playground: JS, Python, SQL, Terraform, Ansible & more',
+    url: 'https://gvnghiem.github.io/DevPortal/',
+    img: `${import.meta.env.BASE_URL}projects/devportal.jpg`,
+    tags: ['Dev tools', 'WebAssembly'],
+  },
+  {
+    name: 'Texas Hold’em',
+    desc: 'No-limit poker with bot AI, side pots and hot-seat multiplayer',
+    url: 'https://gvnghiem.github.io/texasholdem/',
+    img: `${import.meta.env.BASE_URL}projects/texasholdem.jpg`,
+    tags: ['JavaScript', 'Game'],
+  },
+  {
     name: 'Rubiksports',
     desc: 'Playable 2×2, 3×3 & 4×4 Rubik’s cube with timer and solver (Three.js)',
     url: 'https://gvnghiem.github.io/rubiksports/',
