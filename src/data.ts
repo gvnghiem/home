@@ -52,7 +52,7 @@ export const projects = [
     name: 'Rubiksports',
     desc: 'Playable 2×2, 3×3 & 4×4 Rubik’s cube with timer and solver (Three.js)',
     url: 'https://gvnghiem.github.io/rubiksports/',
-    img: `${import.meta.env.BASE_URL}projects/rubiksports.png`,
+    img: 'https://repository-images.githubusercontent.com/1463431994/da25d193-a88b-4ca4-b1c6-288c414502b0', // repo social preview
     tags: ['Three.js', 'Game'],
   },
   {
