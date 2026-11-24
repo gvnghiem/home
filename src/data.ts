@@ -102,7 +102,7 @@ export const projects = [
     name: 'Panda Stack',
     desc: 'Stacking game built with JavaScript',
     url: 'https://gvnghiem.github.io/panda-stack/',
-    img: 'https://gvnghiem.github.io/panda-stack/screenshot.png',
+    img: 'https://repository-images.githubusercontent.com/948018998/26c9f773-15a9-4cb8-b720-717e0a919667',
     tags: ['JavaScript', 'Game'],
   },
   {
