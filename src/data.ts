@@ -35,6 +35,14 @@ export const stats = [
 
 export const projects = [
   {
+    name: 'FlowPortal',
+    desc: 'Architecture, workflow & UML diagrams with a design reviewer',
+    url: 'https://gvnghiem.github.io/FlowPortal/',
+    img: 'https://repository-images.githubusercontent.com/1469639146/bf9b6328-886c-499f-a602-d5326351169c',
+    pos: '55% center',
+    tags: ['Dev tools', 'Architecture'],
+  },
+  {
     name: 'DevPortal',
     desc: 'Browser dev playground: JS, Python, SQL, Terraform, Ansible & more',
     url: 'https://gvnghiem.github.io/DevPortal/',
