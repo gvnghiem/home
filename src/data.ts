@@ -38,7 +38,7 @@ export const projects = [
     name: 'FlowPortal',
     desc: 'Architecture, workflow & UML diagrams with a design reviewer',
     url: 'https://gvnghiem.github.io/FlowPortal/',
-    img: 'https://repository-images.githubusercontent.com/1469639146/bf9b6328-886c-499f-a602-d5326351169c',
+    img: 'https://repository-images.githubusercontent.com/1469639146/bc4fe83f-68f9-4ba6-bb72-9ac1f6ecf9fa',
     pos: '55% center',
     tags: ['Dev tools', 'Architecture'],
   },
